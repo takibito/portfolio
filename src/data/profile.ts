@@ -1,22 +1,22 @@
 // 掲載内容はすべて外向けに抽象化したもの（社名・顧客名・人名・未リリースの日程は載せない）
 
 export const profile = {
-  name: "unwissenheit",
-  reading: "ウンヴィッセンハイト",
-  handle: "unwissenheit",
+  name: "takibito",
+  reading: "たきびと",
+  handle: "takibito",
   role: "Backend Engineer",
   tagline: "学びながら、手を動かし続ける。",
   summary:
     "京都で大学入試の Web システムの開発に携わっているエンジニアです。業務の外では、開発環境を整えたり、自分の VPS でサービスを動かしたりしながら、少しずつ技術を学んでいます。",
-  github: "https://github.com/unwissenheit",
-  qiita: "https://qiita.com/unwissenheit",
-  email: "unwissenheit.tech@gmail.com",
+  github: "https://github.com/takibito",
+  qiita: "https://qiita.com/takibito",
+  email: "takibito.tech@gmail.com",
   location: "Kyoto, Japan",
 };
 
 export const about = {
   paragraphs: [
-    "はじめまして、unwissenheit（ウンヴィッセンハイト）と申します。ドイツ語で「無知」という意味の言葉です。ご覧いただき、ありがとうございます。",
+    "はじめまして、takibito（たきびと）と申します。",
     "佐賀大学と大学院で情報工学を学んだあと、京都で大学入試の Web システムの開発に携わっています。仕事では、お客さまの「なぜそうしたいのか」をていねいに伺い、その思いを形にすることを大切にしています。",
     "新しい技術に触れることが好きで、休日も開発環境を整えたり、自分のサーバーでサービスを動かしたりしながら、少しずつ学んでいます。まだまだ勉強中のことばかりですが、一緒に働く方に安心して任せていただけるよう、一歩ずつ成長していきたいと考えています。",
   ],
@@ -66,7 +66,8 @@ export const education = [
   {
     period: "2022 — 2024",
     title: "佐賀大学大学院 理工学研究科 知能情報工学専攻 修了（修士）",
-    thesis: "輻輳制御アルゴリズムを模したSAGABCにおける仮想通貨送付量の最適化アルゴリズム",
+    thesis:
+      "輻輳制御アルゴリズムを模したSAGABCにおける仮想通貨送付量の最適化アルゴリズム",
     abstract:
       "ネットワークの輻輳制御アルゴリズムの考え方を仮想通貨の送付に取り入れ、状況に応じて送付量を調整・最適化するアルゴリズムを提案しました。",
     note: "研究室サーバーの管理を担当し、Nginx と Docker で学生の Web サービスの基盤を運用",
@@ -83,7 +84,16 @@ export const education = [
 
 export const skills = {
   実務: ["C#", ".NET MVC", ".NET Blazor", "SQL Server", "Azure"],
-  個人開発: ["Go", "Python", "TypeScript", "React", "Vue.js", "Next.js", "Docker", "Linux"],
+  個人開発: [
+    "Go",
+    "Python",
+    "TypeScript",
+    "React",
+    "Vue.js",
+    "Next.js",
+    "Docker",
+    "Linux",
+  ],
 };
 
 export type Work = {
@@ -108,7 +118,7 @@ export const works: Work[] = [
       "SSH 鍵などの秘密情報はリポジトリに含めず、パスワードマネージャーで管理",
     ],
     tags: ["chezmoi", "Neovim", "Lua", "WezTerm"],
-    href: "https://github.com/unwissenheit/dotfiles",
+    href: "https://github.com/takibito/dotfiles",
     size: "lg",
   },
   {
@@ -120,7 +130,8 @@ export const works: Work[] = [
   },
   {
     title: "photo share app",
-    description: "写真を共有する Web アプリ。設計から公開まで個人で進めています。",
+    description:
+      "写真を共有する Web アプリ。設計から公開まで個人で進めています。",
     tags: ["Next.js", "Docker"],
     status: "Coming soon",
     size: "md",
